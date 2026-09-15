@@ -25,7 +25,7 @@ jobs:
 
       - name: Run Scraper
         env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
         # Running your specific file
         run: python Scrapper.py
 
